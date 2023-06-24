@@ -1,0 +1,36 @@
+﻿@page "/edit/{Id}"
+<div class="card">
+    <div class="card-header d-flex">
+        <div class="p-2">Class details</div>
+        <a href="/" class="btn btn-primary ml-auto mr-3">
+            Back to list
+        </a>
+        <button class="btn btn-danger p-2 mr-3"
+                @onclick="() => DeleteClassAsync(Id)">
+            Delete
+        </button>
+        <input type="submit" class="btn btn-success mr-3" form="form" value="Save" />
+    </div>
+    <div class="card-body">
+        <div>
+            <EditForm Model="myClass" OnValidSubmit="@Update" id="form">
+                <DataAnnotationsValidator />
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Code</label>
+                    <input type="text" readonly class="form-control rounded" id="exampleInputPassword1" @bind-value="myClass.ClassId" required placeholder="Please fill your name here.">
+                    <ValidationMessage For="()=>myClass.ClassId"></ValidationMessage>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Name</label>
+                    <input type="text" class="form-control rounded" id="exampleInputPassword1" @bind-value="myClass.Name" required placeholder="Please fill your name here.">
+                    <ValidationMessage For="()=>myClass.Name"></ValidationMessage>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input type="text" class="form-control rounded" id="description" @bind-value="myClass.Description" required placeholder="Enter desctription">
+                </div>
+            </EditForm>
+        </div>
+        <DemoBlazor.Components.Person id="@Id"></DemoBlazor.Components.Person>
+    </div>
+</div>

@@ -1,0 +1,3 @@
+-Tải node
+- Đến thư mục chứa project testcafe gõ npm init
+- Cài đặt testcafe: npm i testcafe

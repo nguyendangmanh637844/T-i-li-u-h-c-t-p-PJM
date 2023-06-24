@@ -1,0 +1,20 @@
+﻿@page "/create"
+<div class="card">
+    <div class="card-header">Add class  </div>
+    <div class="card-body">
+        <EditForm Model="myClass" OnValidSubmit="@CreateClass" id="form">
+            <DataAnnotationsValidator />
+            <div class="form-group">
+                <label for="className">Name</label>
+                <input type="text" class="form-control" id="className" @bind-value="myClass.Name" placeholder="Please fill your name here.">
+                <ValidationMessage For="()=>myClass.Name"></ValidationMessage>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" class="form-control" id="description" @bind-value="myClass.Description" aria-describedby="emailHelp" placeholder="Enter describe">
+                <ValidationMessage For="()=>myClass.Description"></ValidationMessage>
+            </div>
+            <button type="submit" class="btn btn-success"> Submit</button>
+        </EditForm>
+    </div>
+</div>

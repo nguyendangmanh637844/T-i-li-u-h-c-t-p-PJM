@@ -1,0 +1,29 @@
+﻿<div class="top-row pl-4 navbar bg-light border">
+    <a class="navbar-brand" href="/">DemoBlazor</a>
+</div>
+
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <ul class="nav flex-column ">
+        <li class="nav-item px-3 ">
+            <NavLink class="nav-link text-primary" href="create">
+                <span aria-hidden="true"></span> Create class
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link text-primary" href="/" Match="NavLinkMatch.All">
+                <span aria-hidden="true"></span> Class
+            </NavLink>
+        </li>
+    </ul>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

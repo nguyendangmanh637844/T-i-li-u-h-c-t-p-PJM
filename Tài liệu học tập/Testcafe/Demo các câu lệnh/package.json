@@ -1,0 +1,17 @@
+{
+  "name": "demotestcafe",
+  "version": "1.0.0",
+  "description": "demo testcafe",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome ./Tests"
+  },
+  "keywords": [
+    "TestCafe"
+  ],
+  "author": "PJM",
+  "license": "ISC",
+  "dependencies": {
+    "testcafe": "^1.19.0"
+  }
+}

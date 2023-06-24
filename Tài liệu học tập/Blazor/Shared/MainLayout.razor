@@ -1,0 +1,25 @@
+﻿@inherits LayoutComponentBase
+@using Blazored.Toast.Configuration
+
+<div class="page">
+    @if (isCollapse)
+    {
+        <div class="sidebar border" id="here" style="background-image: none;">
+            <NavMenu />
+        </div>
+    }
+    <div class="main">
+        <div class="top-row px-4 d-flex">
+            <button class="btn btn-primary" @onclick="()=>isCollapse=!isCollapse"><ion-icon name="menu"></ion-icon></button>
+            <a href="#" target="_blank" class="ml-md-auto">Logout</a>
+        </div>
+
+        <div class="content px-4">
+            @Body
+        </div>
+    </div>
+</div>
+<BlazoredToasts Position="ToastPosition.BottomRight"
+                Timeout="5"
+                IconType="IconType.FontAwesome" />
+<DemoBlazor.Components.Comfirmation />
