@@ -1,0 +1,17 @@
+E:\Publish\ChatGPT\ChatGPTConsole.exe
+E:\Publish\ChatGPT\ChatGPTConsole.dll
+E:\Publish\ChatGPT\ChatGPTConsole.deps.json
+E:\Publish\ChatGPT\ChatGPTConsole.runtimeconfig.json
+E:\Publish\ChatGPT\ChatGPTConsole.pdb
+E:\Publish\ChatGPT\Aspose.Words.Pdf2Word.dll
+E:\Publish\ChatGPT\Aspose.Words.dll
+E:\Publish\ChatGPT\Microsoft.Win32.SystemEvents.dll
+E:\Publish\ChatGPT\OpenAI-DotNet.dll
+E:\Publish\ChatGPT\SkiaSharp.dll
+E:\Publish\ChatGPT\System.Drawing.Common.dll
+E:\Publish\ChatGPT\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Publish\ChatGPT\runtimes\osx\native\libSkiaSharp.dylib
+E:\Publish\ChatGPT\runtimes\win-arm64\native\libSkiaSharp.dll
+E:\Publish\ChatGPT\runtimes\win-x64\native\libSkiaSharp.dll
+E:\Publish\ChatGPT\runtimes\win-x86\native\libSkiaSharp.dll
+E:\Publish\ChatGPT\runtimes\win\lib\net6.0\System.Drawing.Common.dll

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SendMailModelStoreContainer" CdmEntityContainer="SendMailEntities">
+    <EntitySetMapping Name="Emails">
+      <EntityTypeMapping TypeName="SendMailModel.Email">
+        <MappingFragment StoreEntitySet="Emails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="To" ColumnName="To" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="MessageBodyDay" ColumnName="MessageBodyDay" />
+          <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+          <ScalarProperty Name="SendDate" ColumnName="SendDate" />
+          <ScalarProperty Name="Intention" ColumnName="Intention" />
+          <ScalarProperty Name="Attempts" ColumnName="Attempts" />
+          <ScalarProperty Name="UsingTemplate" ColumnName="UsingTemplate" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageBodies">
+      <EntityTypeMapping TypeName="SendMailModel.MessageBody">
+        <MappingFragment StoreEntitySet="MessageBody">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VN" ColumnName="VN" />
+          <ScalarProperty Name="EN" ColumnName="EN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageBodyDays">
+      <EntityTypeMapping TypeName="SendMailModel.MessageBodyDay">
+        <MappingFragment StoreEntitySet="MessageBodyDay">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VN" ColumnName="VN" />
+          <ScalarProperty Name="EN" ColumnName="EN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageBodyNights">
+      <EntityTypeMapping TypeName="SendMailModel.MessageBodyNight">
+        <MappingFragment StoreEntitySet="MessageBodyNight">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VN" ColumnName="VN" />
+          <ScalarProperty Name="EN" ColumnName="EN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="SendMailModel.Subject">
+        <MappingFragment StoreEntitySet="Subject">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VN" ColumnName="VN" />
+          <ScalarProperty Name="EN" ColumnName="EN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ToEmails">
+      <EntityTypeMapping TypeName="SendMailModel.ToEmail">
+        <MappingFragment StoreEntitySet="ToEmail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

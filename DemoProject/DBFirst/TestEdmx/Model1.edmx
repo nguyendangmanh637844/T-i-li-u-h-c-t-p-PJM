@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SendMailModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Emails">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="To" Type="nvarchar(max)" />
+          <Property Name="Subject" Type="nvarchar(max)" />
+          <Property Name="MessageBodyDay" Type="nvarchar(max)" />
+          <Property Name="RegistrationDate" Type="datetime2" Precision="7" Nullable="false" />
+          <Property Name="SendDate" Type="datetime2" Precision="7" />
+          <Property Name="Intention" Type="datetime2" Precision="7" />
+          <Property Name="Attempts" Type="int" Nullable="false" />
+          <Property Name="UsingTemplate" Type="bit" Nullable="false" />
+          <Property Name="ErrorMessage" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="MessageBody">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="VN" Type="nvarchar(max)" />
+          <Property Name="EN" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="MessageBodyDay">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="VN" Type="nvarchar(max)" />
+          <Property Name="EN" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="MessageBodyNight">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="decimal" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="VN" Type="nvarchar(max)" />
+          <Property Name="EN" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Subject">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="decimal" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="VN" Type="nvarchar(max)" />
+          <Property Name="EN" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ToEmail">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="decimal" Precision="18" Scale="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Email" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="SendMailModelStoreContainer">
+          <EntitySet Name="Emails" EntityType="Self.Emails" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MessageBody" EntityType="Self.MessageBody" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MessageBodyDay" EntityType="Self.MessageBodyDay" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MessageBodyNight" EntityType="Self.MessageBodyNight" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Subject" EntityType="Self.Subject" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ToEmail" EntityType="Self.ToEmail" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SendMailModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Email">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="To" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Subject" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MessageBodyDay" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="RegistrationDate" Type="DateTime" Nullable="false" Precision="7" />
+          <Property Name="SendDate" Type="DateTime" Precision="7" />
+          <Property Name="Intention" Type="DateTime" Precision="7" />
+          <Property Name="Attempts" Type="Int32" Nullable="false" />
+          <Property Name="UsingTemplate" Type="Boolean" Nullable="false" />
+          <Property Name="ErrorMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MessageBody">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="VN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MessageBodyDay">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+          <Property Name="VN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="MessageBodyNight">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="VN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Subject">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="VN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="EN" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ToEmail">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Decimal" Precision="18" Scale="0" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="SendMailEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Emails" EntityType="Self.Email" />
+          <EntitySet Name="MessageBodies" EntityType="Self.MessageBody" />
+          <EntitySet Name="MessageBodyDays" EntityType="Self.MessageBodyDay" />
+          <EntitySet Name="MessageBodyNights" EntityType="Self.MessageBodyNight" />
+          <EntitySet Name="Subjects" EntityType="Self.Subject" />
+          <EntitySet Name="ToEmails" EntityType="Self.ToEmail" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SendMailModelStoreContainer" CdmEntityContainer="SendMailEntities">
+          <EntitySetMapping Name="Emails">
+            <EntityTypeMapping TypeName="SendMailModel.Email">
+              <MappingFragment StoreEntitySet="Emails">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="To" ColumnName="To" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="MessageBodyDay" ColumnName="MessageBodyDay" />
+                <ScalarProperty Name="RegistrationDate" ColumnName="RegistrationDate" />
+                <ScalarProperty Name="SendDate" ColumnName="SendDate" />
+                <ScalarProperty Name="Intention" ColumnName="Intention" />
+                <ScalarProperty Name="Attempts" ColumnName="Attempts" />
+                <ScalarProperty Name="UsingTemplate" ColumnName="UsingTemplate" />
+                <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MessageBodies">
+            <EntityTypeMapping TypeName="SendMailModel.MessageBody">
+              <MappingFragment StoreEntitySet="MessageBody">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="VN" ColumnName="VN" />
+                <ScalarProperty Name="EN" ColumnName="EN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MessageBodyDays">
+            <EntityTypeMapping TypeName="SendMailModel.MessageBodyDay">
+              <MappingFragment StoreEntitySet="MessageBodyDay">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="VN" ColumnName="VN" />
+                <ScalarProperty Name="EN" ColumnName="EN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MessageBodyNights">
+            <EntityTypeMapping TypeName="SendMailModel.MessageBodyNight">
+              <MappingFragment StoreEntitySet="MessageBodyNight">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="VN" ColumnName="VN" />
+                <ScalarProperty Name="EN" ColumnName="EN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Subjects">
+            <EntityTypeMapping TypeName="SendMailModel.Subject">
+              <MappingFragment StoreEntitySet="Subject">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="VN" ColumnName="VN" />
+                <ScalarProperty Name="EN" ColumnName="EN" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ToEmails">
+            <EntityTypeMapping TypeName="SendMailModel.ToEmail">
+              <MappingFragment StoreEntitySet="ToEmail">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,57 @@
+F:\SendEmail\obj\Debug\netcoreapp3.1\SendEmail.GeneratedMSBuildEditorConfig.editorconfig
+F:\SendEmail\obj\Debug\netcoreapp3.1\SendEmail.AssemblyInfoInputs.cache
+F:\SendEmail\obj\Debug\netcoreapp3.1\SendEmail.AssemblyInfo.cs
+F:\SendEmail\obj\Debug\netcoreapp3.1\SendEmail.csproj.CoreCompileInputs.cache
+F:\SendEmail\obj\Debug\netcoreapp3.1\SendEmail.MvcApplicationPartsAssemblyInfo.cache
+F:\SendEmail\bin\Debug\netcoreapp3.1\appsettings.Development.json
+F:\SendEmail\bin\Debug\netcoreapp3.1\appsettings.json
+F:\SendEmail\bin\Debug\netcoreapp3.1\SendEmail.exe
+F:\SendEmail\bin\Debug\netcoreapp3.1\SendEmail.deps.json
+F:\SendEmail\bin\Debug\netcoreapp3.1\SendEmail.runtimeconfig.json
+F:\SendEmail\bin\Debug\netcoreapp3.1\SendEmail.runtimeconfig.dev.json
+F:\SendEmail\bin\Debug\netcoreapp3.1\SendEmail.dll
+F:\SendEmail\bin\Debug\netcoreapp3.1\SendEmail.pdb
+F:\SendEmail\bin\Debug\netcoreapp3.1\MailKit.dll
+F:\SendEmail\bin\Debug\netcoreapp3.1\MimeKit.dll
+F:\SendEmail\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+F:\SendEmail\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+F:\SendEmail\bin\Debug\netcoreapp3.1\Serilog.dll
+F:\SendEmail\obj\Debug\netcoreapp3.1\staticwebassets\SendEmail.StaticWebAssets.Manifest.cache
+F:\SendEmail\obj\Debug\netcoreapp3.1\staticwebassets\SendEmail.StaticWebAssets.xml
+F:\SendEmail\obj\Debug\netcoreapp3.1\scopedcss\bundle\SendEmail.styles.css
+F:\SendEmail\obj\Debug\netcoreapp3.1\SendEmail.RazorTargetAssemblyInfo.cache
+F:\SendEmail\obj\Debug\netcoreapp3.1\SendEmail.csproj.CopyComplete
+F:\SendEmail\obj\Debug\netcoreapp3.1\SendEmail.dll
+F:\SendEmail\obj\Debug\netcoreapp3.1\SendEmail.pdb
+F:\SendEmail\obj\Debug\netcoreapp3.1\SendEmail.genruntimeconfig.cache
+E:\Tài liệu học tập\AutoSendEmail\Backend\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Tài liệu học tập\AutoSendEmail\Backend\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Tài liệu học tập\AutoSendEmail\Backend\bin\Debug\netcoreapp3.1\SendEmail.StaticWebAssets.xml
+E:\Tài liệu học tập\AutoSendEmail\Backend\bin\Debug\netcoreapp3.1\SendEmail.exe
+E:\Tài liệu học tập\AutoSendEmail\Backend\bin\Debug\netcoreapp3.1\SendEmail.deps.json
+E:\Tài liệu học tập\AutoSendEmail\Backend\bin\Debug\netcoreapp3.1\SendEmail.runtimeconfig.json
+E:\Tài liệu học tập\AutoSendEmail\Backend\bin\Debug\netcoreapp3.1\SendEmail.runtimeconfig.dev.json
+E:\Tài liệu học tập\AutoSendEmail\Backend\bin\Debug\netcoreapp3.1\SendEmail.dll
+E:\Tài liệu học tập\AutoSendEmail\Backend\bin\Debug\netcoreapp3.1\SendEmail.pdb
+E:\Tài liệu học tập\AutoSendEmail\Backend\bin\Debug\netcoreapp3.1\MailKit.dll
+E:\Tài liệu học tập\AutoSendEmail\Backend\bin\Debug\netcoreapp3.1\MimeKit.dll
+E:\Tài liệu học tập\AutoSendEmail\Backend\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+E:\Tài liệu học tập\AutoSendEmail\Backend\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+E:\Tài liệu học tập\AutoSendEmail\Backend\bin\Debug\netcoreapp3.1\Serilog.dll
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\SendEmail.csproj.AssemblyReference.cache
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\SendEmail.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\SendEmail.AssemblyInfoInputs.cache
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\SendEmail.AssemblyInfo.cs
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\SendEmail.csproj.CoreCompileInputs.cache
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\SendEmail.MvcApplicationPartsAssemblyInfo.cache
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\staticwebassets\SendEmail.StaticWebAssets.Manifest.cache
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\staticwebassets\SendEmail.StaticWebAssets.Pack.cache
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.SendEmail.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.build.SendEmail.props
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildMultiTargeting.SendEmail.props
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\staticwebassets\msbuild.buildTransitive.SendEmail.props
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\SendEmail.RazorTargetAssemblyInfo.cache
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\SendEmail.csproj.CopyComplete
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\SendEmail.dll
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\SendEmail.pdb
+E:\Tài liệu học tập\AutoSendEmail\Backend\obj\Debug\netcoreapp3.1\SendEmail.genruntimeconfig.cache

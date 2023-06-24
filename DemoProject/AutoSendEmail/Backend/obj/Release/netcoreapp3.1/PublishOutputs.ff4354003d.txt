@@ -1,0 +1,12 @@
+F:\SendEmail\obj\Release\netcoreapp3.1\PubTmp\Out\SendEmail.exe
+F:\SendEmail\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+F:\SendEmail\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+F:\SendEmail\obj\Release\netcoreapp3.1\PubTmp\Out\SendEmail.dll
+F:\SendEmail\obj\Release\netcoreapp3.1\PubTmp\Out\SendEmail.deps.json
+F:\SendEmail\obj\Release\netcoreapp3.1\PubTmp\Out\SendEmail.runtimeconfig.json
+F:\SendEmail\obj\Release\netcoreapp3.1\PubTmp\Out\SendEmail.pdb
+F:\SendEmail\obj\Release\netcoreapp3.1\PubTmp\Out\MailKit.dll
+F:\SendEmail\obj\Release\netcoreapp3.1\PubTmp\Out\MimeKit.dll
+F:\SendEmail\obj\Release\netcoreapp3.1\PubTmp\Out\Newtonsoft.Json.dll
+F:\SendEmail\obj\Release\netcoreapp3.1\PubTmp\Out\BouncyCastle.Crypto.dll
+F:\SendEmail\obj\Release\netcoreapp3.1\PubTmp\Out\Serilog.dll
