@@ -1,0 +1,66 @@
+cài đặt: tải nodejs
+		npm i -g yarn 
+		npm i -g create-react-app
+		create-react-app ten_app
+		chạy thì vào package.json để xem lệnh : npm start hoặc yarn start
+		set port thì đổi trong package.json lệnh start thành  set port=4200 && create-react-app start
+cách hoạt động:  - chạy file public/index.html đầu tiên. trong đó có thẻ <div id="root"></div>
+			- chạy index.js có lệnh document.getbyid để tìm đến div bên trên và dùng render(){} để fill component vào
+			- app.js là một functional component 
+
+component: - functional: Là một hàm JavaScript thông thường.
+			Được viết dưới dạng hàm và nhận các thuộc tính (props) là tham số đầu vào. vd ở app <Hello name='a' age='b'> trong props 				truyền vào sẽ là {name: 'a', age: 'b'}
+			Không giữ trạng thái (state).
+			Không sử dụng các phương thức theo kiểu lớp như "componentDidMount" hoặc "componentDidUpdate".
+			Đơn giản và dễ đọc, thích hợp cho các thành phần không cần quản lý trạng thái phức tạp.
+
+		-class: Là một lớp JavaScript được mở rộng từ React.Component.
+			truyền props ở ngoài vào thì trong dùng thuộc tính this.props.ten_prop để lấy ra giá trị
+			Được viết dưới dạng một lớp với phương thức render().
+			Có khả năng giữ trạng thái (state) và cập nhật trạng thái bằng cách sử dụng phương thức setState().
+			Sử dụng các lifecycle methods như "componentDidMount", "componentDidUpdate", "componentWillUnmount" để xử lý các tác vụ 			như khởi tạo, cập nhật và hủy bỏ thành phần.
+			Được sử dụng khi cần quản lý trạng thái phức tạp và xử lý các tác vụ liên quan đến vòng đời của thành phần.
+			
+trong hàm render chỉ trả về một thành phần html nên nếu muốn trả về nhiều thành phần thì phải bao tất cả lại bên trong một thẻ div
+state trong react tương tự data trong vue, là nơi khai báo các biến
+
+destructuring props cho phép bạn trích xuất (extract) các thuộc tính (properties) của một đối tượng và gán chúng vào các biến riêng lẻ. Khi sử dụng destructuring props, bạn có thể truy cập trực tiếp các thuộc tính của props mà không cần viết props. trước mỗi thuộc tính. Điều này giúp làm mã nguồn gọn gàng và dễ đọc hơn.
+vd: const {name, age} = props;
+
+event binding: func-component: k cần this và chỉ cần truyền vào tên hàm k cần dấu (). nếu viết cả dấu () thì hàm sẽ đc thực thi luôn
+			class-component: dùng  arrow func thì mới sử dụng được từ khóa this bên trong hàm. khi truyền cần thêm this ở đầu và k cần dấu () tương tự như ở func-component. có hai cách là dùng arrow func khi khai báo hàm vd: click = () => {} hoặc truyền vào ở chỗ gọi vd: onClick={()=> this.Click()}
+
+sử dụng  fregment để k cần thẻ bao ngoài
+
+dùng memos để tránh rerender không cần thiết
+
+Cách thêm route:
+	yarn add react-router-dom
+	tạo component navbar.js
+	thêm vào App.js:
+
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Click from "./components/Click";
+import ClickFunc from "./components/ClickFunc";
+import ClassComponet from './components/ClassComponent'
+import Navbar from "./navbar";
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <Navbar />
+        <Routes>
+        <Route path="/" element={<Click />} />
+        <Route path="/about" element={<ClickFunc />} />
+        <Route path="/contact" element={<ClassComponet />} />
+        </Routes>
+      </Router>
+    </div>
+  );
+}
+
+export default App;
+
+
+export default App;

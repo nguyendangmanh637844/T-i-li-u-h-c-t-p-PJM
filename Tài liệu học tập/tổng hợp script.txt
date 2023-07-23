@@ -1,0 +1,157 @@
+USE ezDevManh
+DELETE FROM dbo.[Function] WHERE Code='AllowDeleteInvoiceBusinessArea'
+INSERT INTO dbo.[Function]
+(
+    Code,
+    Description,
+    MenuCode,
+    IsActive,
+    HotelID
+)
+VALUES
+(   'AllowDeleteInvoiceBusinessArea', -- Code - varchar(50)
+    'allow_delete_invoice_business_area', -- Description - nvarchar(200)
+    1, -- MenuCode - bigint
+    1, -- IsActive - bit
+    'ez'  -- HotelID - varchar(20)
+    )
+
+DELETE dbo.UserGroupPermission WHERE FunctionCode = 'AllowDeleteInvoiceBusinessArea'
+
+INSERT INTO dbo.UserGroupPermission
+(
+        GroupName,
+        UserID,
+        FunctionCode,
+        HotelID
+)
+SELECT GroupName,
+        NULL,
+        'AllowDeleteInvoiceBusinessArea',
+        HotelID 
+FROM dbo.UserGroupPermission WHERE FunctionCode = 'AdjustInvoiceOfBusinessArea' AND GroupName IS NOT NULL
+UNION
+SELECT  NULL,
+        UserID,
+        'AllowDeleteInvoiceBusinessArea',
+        HotelID
+FROM dbo.UserGroupPermission WHERE FunctionCode = 'AdjustInvoiceOfBusinessArea' AND UserID IS NOT NULL
+
+------------------routing
+DELETE FROM dbo.MenuList WHERE MenuCode IN (261,262)
+SET IDENTITY_INSERT dbo.MenuList ON
+INSERT INTO dbo.MenuList
+(
+	MenuCode,
+    MenuName,
+    MenuLink,
+    IconName,
+    MenuPosition,
+    MenuParent,
+    MenuLevel,
+    HaveChild,
+    Active,
+    Permission,
+    DisplayInFastMenu,
+    MenuLinkHelp,
+    ModuleIDList,
+    IsHasTab,
+    RouteName
+)
+VALUES
+(   261,
+	N'cashier', -- MenuName - nvarchar(200)
+    N'/configuration/hotel_configuration/cashier', -- MenuLink - nvarchar(200)
+    NULL, -- IconName - nvarchar(200)
+    4, -- MenuPosition - int
+    138, -- MenuParent - bigint
+    3, -- MenuLevel - int
+    0, -- HaveChild - bit
+    1, -- Active - bit
+    NULL, -- Permission - nvarchar(200)
+    NULL, -- DisplayInFastMenu - bit
+    N'', -- MenuLinkHelp - nvarchar(max)
+    N'10000,10001', -- ModuleIDList - varchar(max)
+    1, -- IsHasTab - bit
+    N'CashierConfig'  -- RouteName - nvarchar(500)
+    ),
+(   262,
+	N'routing', -- MenuName - nvarchar(200)
+    N'/configuration/hotel_configuration/cashier/routing', -- MenuLink - nvarchar(200)
+    NULL, -- IconName - nvarchar(200)
+    1, -- MenuPosition - int
+    261, -- MenuParent - bigint
+    4, -- MenuLevel - int
+    0, -- HaveChild - bit
+    1, -- Active - bit
+    NULL, -- Permission - nvarchar(200)
+    NULL, -- DisplayInFastMenu - bit
+    N'', -- MenuLinkHelp - nvarchar(max)
+    N'10000,10001', -- ModuleIDList - varchar(max)
+    0, -- IsHasTab - bit
+    N'CashierRouting'  -- RouteName - nvarchar(500)
+    )
+SET IDENTITY_INSERT dbo.MenuList OFF
+GO
+================================================
+
+
+
+USE ezDevManh1
+UPDATE dbo.DisplayConfig SET DisplayOrder = DisplayOrder*10 WHERE 1 = 1
+DELETE FROM dbo.DisplayConfig WHERE ScreenCode ='RESERVATION_SEARCH' AND FieldName='RoomTypeBooked'
+INSERT INTO dbo.DisplayConfig
+(
+    ScreenCode,
+    FieldName,
+    TitleName,
+    Description,
+    ComponentName,
+    Width,
+    TitleAlign,
+    ColumnAlign,
+    Formatter,
+    FieldType,
+    TitleCellClassName,
+    DisplayOrder,
+    IsActive,
+    CreatedTime,
+    ClerkID,
+    LastChangeTime,
+    LastChangeClerkID,
+    HotelID,
+    IsFieldSort,
+    SortOrder
+)
+SELECT
+ N'RESERVATION_SEARCH', 'RoomTypeBooked', N'room_type_booked', N'Mã hạng đặt', '', 90, 'center', 'left', NULL, NULL, NULL, 69, 0, GETDATE(), '$Sy', NULL, '', h.HotelID, NULL, NULL 
+ FROM dbo.Hotel h
+DELETE FROM dbo.DisplayConfig WHERE ScreenCode='RSV_SEARCH_DETAIL' AND FieldName='RoomTypeBooked'
+INSERT INTO dbo.DisplayConfig
+(
+    ScreenCode,
+    FieldName,
+    TitleName,
+    Description,
+    ComponentName,
+    Width,
+    TitleAlign,
+    ColumnAlign,
+    Formatter,
+    FieldType,
+    TitleCellClassName,
+    DisplayOrder,
+    IsActive,
+    CreatedTime,
+    ClerkID,
+    LastChangeTime,
+    LastChangeClerkID,
+    HotelID,
+    IsFieldSort,
+    SortOrder
+)
+SELECT
+ 'RSV_SEARCH_DETAIL', 'RoomTypeBooked', '`<span class="pointer">${self.$t(`room_type_booked`)}</span>`', 
+NULL, NULL, 100, 'center', 'left', N'', NULL, NULL, 59, 0, GETDATE(), '$SY', NULL, NULL, h.HotelID, NULL, NULL 
+FROM dbo.Hotel h
+

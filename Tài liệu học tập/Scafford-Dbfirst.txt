@@ -1,0 +1,7 @@
+cài packages:
+	-Microsoft.EntityFrameworkCore.SqlServer
+	-Microsoft.EntityFrameworkCore.Tools
+Chạy lệnh ở Tools -> Nuget Package Manager -> Package Manager Console:
+Scaffold-DbContext "Data Source=LAPTOP-MVIKQBH3;Initial Catalog=SendMail;Integrated Security=True;Encrypt=false" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -context Context -Contextdir Context -DataAnnotations -Force
+
+log: Serilog.AspNetCore
