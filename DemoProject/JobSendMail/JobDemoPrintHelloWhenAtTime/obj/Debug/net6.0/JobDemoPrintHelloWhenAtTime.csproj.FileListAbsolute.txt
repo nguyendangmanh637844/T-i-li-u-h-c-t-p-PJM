@@ -1,0 +1,108 @@
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\JobDemoPrintHelloWhenAtTime.exe
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\appsettings.json
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\JobDemoPrintHelloWhenAtTime.deps.json
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\JobDemoPrintHelloWhenAtTime.runtimeconfig.json
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\JobDemoPrintHelloWhenAtTime.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\JobDemoPrintHelloWhenAtTime.pdb
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.CommandLine.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Hosting.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Logging.Configuration.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Logging.Console.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Logging.Debug.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Logging.EventLog.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Logging.EventSource.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\System.Diagnostics.EventLog.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.csproj.AssemblyReference.cache
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.AssemblyInfoInputs.cache
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.AssemblyInfo.cs
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.csproj.CopyComplete
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\refint\JobDemoPrintHelloWhenAtTime.dll
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.pdb
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.genruntimeconfig.cache
+C:\Users\PC\source\repos\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\ref\JobDemoPrintHelloWhenAtTime.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.csproj.AssemblyReference.cache
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.AssemblyInfoInputs.cache
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.AssemblyInfo.cs
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.csproj.CoreCompileInputs.cache
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\refint\JobDemoPrintHelloWhenAtTime.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.pdb
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\JobDemoPrintHelloWhenAtTime.exe
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\appsettings.json
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\JobDemoPrintHelloWhenAtTime.deps.json
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\JobDemoPrintHelloWhenAtTime.runtimeconfig.json
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\JobDemoPrintHelloWhenAtTime.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\JobDemoPrintHelloWhenAtTime.pdb
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\BouncyCastle.Cryptography.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\MailKit.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.CommandLine.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Json.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Configuration.UserSecrets.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Physical.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.FileSystemGlobbing.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Hosting.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Hosting.Abstractions.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Logging.Configuration.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Logging.Console.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Logging.Debug.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Logging.EventLog.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Logging.EventSource.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\MimeKit.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Newtonsoft.Json.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\Serilog.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\System.Diagnostics.EventLog.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\System.Formats.Asn1.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\System.Security.Cryptography.Pkcs.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\System.Text.Encoding.CodePages.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\System.Text.Json.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.Messages.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Diagnostics.EventLog.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Text.Encoding.CodePages.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.csproj.CopyComplete
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\JobDemoPrintHelloWhenAtTime.genruntimeconfig.cache
+E:\Tài liệu học tập PJM\DemoProject\JobDemoPrintHelloWhenAtTime\JobDemoPrintHelloWhenAtTime\obj\Debug\net6.0\ref\JobDemoPrintHelloWhenAtTime.dll
