@@ -21,7 +21,7 @@ namespace BackgroundJobExample
             _configuration = configuration;
             _logger = logger;
             _targetTimes = LoadTargetTimes();
-            _emailService = new EmailService(configuration);
+            _emailService = new EmailService(configuration, logger);
             _config = configuration.GetSection("AppSettings").Get<AppSetting>() ?? new AppSetting();
         }
 
@@ -46,7 +46,14 @@ namespace BackgroundJobExample
         {
             foreach (var targetTime in _targetTimes)
             {
-                var currentTime = DateTime.Now.TimeOfDay;
+                // Lấy thông tin về múi giờ Việt Nam
+                string vietnamTimeZoneId = "SE Asia Standard Time"; // ID của múi giờ Việt Nam
+                TimeZoneInfo vietnamTimeZone = TimeZoneInfo.FindSystemTimeZoneById(vietnamTimeZoneId);
+
+                // Lấy thời gian hiện tại theo múi giờ Việt Nam
+                DateTime vietnamTime = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, vietnamTimeZone);
+
+                var currentTime = vietnamTime.TimeOfDay;
                 var initialDelay = CalculateInitialDelay(currentTime, targetTime);
 
                 if (initialDelay < TimeSpan.Zero)

@@ -3,6 +3,7 @@ using BackgroundJobExample.ServiceInterface;
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using MimeKit;
 using Serilog;
 
@@ -11,10 +12,12 @@ namespace BackgroundJobExample.Service
     public class EmailService : IEmailService
     {
         private readonly AppSetting _appSetting;
+        private readonly ILogger<SendMail> _logger;
 
-        public EmailService(IConfiguration configuration)
+        public EmailService(IConfiguration configuration, ILogger<SendMail> logger)
         {
             _appSetting = configuration.GetSection("AppSettings").Get<AppSetting>() ?? new AppSetting();
+            _logger = logger;
         }
 
         public async Task<bool> SendMail(MineKitMailMessage message)
@@ -32,7 +35,7 @@ namespace BackgroundJobExample.Service
             }
             catch (Exception ex)
             {
-                Log.Error($"Can not send email to {message.To}: {ex.Message}");
+                _logger.LogInformation($"Can not send email to {message.To}: {ex.Message}");
             }
 
             return isSendEmailSucess;
