@@ -1,0 +1,15 @@
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\bin\Debug\net6.0\AbstractFactory.exe
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\bin\Debug\net6.0\AbstractFactory.deps.json
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\bin\Debug\net6.0\AbstractFactory.runtimeconfig.json
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\bin\Debug\net6.0\AbstractFactory.dll
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\bin\Debug\net6.0\AbstractFactory.pdb
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\obj\Debug\net6.0\AbstractFactory.csproj.AssemblyReference.cache
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\obj\Debug\net6.0\AbstractFactory.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\obj\Debug\net6.0\AbstractFactory.AssemblyInfoInputs.cache
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\obj\Debug\net6.0\AbstractFactory.AssemblyInfo.cs
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\obj\Debug\net6.0\AbstractFactory.csproj.CoreCompileInputs.cache
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\obj\Debug\net6.0\AbstractFactory.dll
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\obj\Debug\net6.0\refint\AbstractFactory.dll
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\obj\Debug\net6.0\AbstractFactory.pdb
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\obj\Debug\net6.0\AbstractFactory.genruntimeconfig.cache
+E:\Tài liệu học tập PJM\PatternC#\AbstractFactory\obj\Debug\net6.0\ref\AbstractFactory.dll

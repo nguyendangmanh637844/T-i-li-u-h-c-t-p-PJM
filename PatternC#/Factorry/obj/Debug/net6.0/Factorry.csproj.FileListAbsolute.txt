@@ -1,0 +1,15 @@
+E:\Tài liệu học tập PJM\PatternC#\Factorry\bin\Debug\net6.0\Factorry.exe
+E:\Tài liệu học tập PJM\PatternC#\Factorry\bin\Debug\net6.0\Factorry.deps.json
+E:\Tài liệu học tập PJM\PatternC#\Factorry\bin\Debug\net6.0\Factorry.runtimeconfig.json
+E:\Tài liệu học tập PJM\PatternC#\Factorry\bin\Debug\net6.0\Factorry.dll
+E:\Tài liệu học tập PJM\PatternC#\Factorry\bin\Debug\net6.0\Factorry.pdb
+E:\Tài liệu học tập PJM\PatternC#\Factorry\obj\Debug\net6.0\Factorry.csproj.AssemblyReference.cache
+E:\Tài liệu học tập PJM\PatternC#\Factorry\obj\Debug\net6.0\Factorry.GeneratedMSBuildEditorConfig.editorconfig
+E:\Tài liệu học tập PJM\PatternC#\Factorry\obj\Debug\net6.0\Factorry.AssemblyInfoInputs.cache
+E:\Tài liệu học tập PJM\PatternC#\Factorry\obj\Debug\net6.0\Factorry.AssemblyInfo.cs
+E:\Tài liệu học tập PJM\PatternC#\Factorry\obj\Debug\net6.0\Factorry.csproj.CoreCompileInputs.cache
+E:\Tài liệu học tập PJM\PatternC#\Factorry\obj\Debug\net6.0\Factorry.dll
+E:\Tài liệu học tập PJM\PatternC#\Factorry\obj\Debug\net6.0\refint\Factorry.dll
+E:\Tài liệu học tập PJM\PatternC#\Factorry\obj\Debug\net6.0\Factorry.pdb
+E:\Tài liệu học tập PJM\PatternC#\Factorry\obj\Debug\net6.0\Factorry.genruntimeconfig.cache
+E:\Tài liệu học tập PJM\PatternC#\Factorry\obj\Debug\net6.0\ref\Factorry.dll
