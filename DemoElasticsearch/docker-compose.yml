@@ -38,8 +38,6 @@ services:
       dockerfile: Dockerfile-logstash
     container_name: sem_logstash
     restart: always
-    ports:
-      - 5044:5044
     depends_on:
       - elasticsearch
     volumes:
@@ -47,15 +45,3 @@ services:
       - ./common/logstash/config/pipelines.yml:/usr/share/logstash/config/pipelines.yml
       - ./common/logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
       - ./common/logstash/pipeline:/usr/share/logstash/pipeline
-  filebeat:
-    image: docker.elastic.co/beats/filebeat:8.11.1
-    container_name: sem_filebeat
-    restart: always
-    command: filebeat -e --strict.perms=false
-    depends_on:
-      - logstash
-    volumes:
-      - ./share/filebeat:/home/elk
-      - ./common/filebeat/filebeat.yml:/usr/share/filebeat/filebeat.yml
-      # Mount đường dẫn log vào trong container để filebeat có thể đọc
-      - D:/logback/log:/var/log/logback

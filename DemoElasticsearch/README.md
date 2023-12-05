@@ -31,7 +31,7 @@ docker exec -it sem_elasticsearch bash
 /usr/share/elasticsearch/bin/elasticsearch-setup-passwords auto
 ```
 
--   Cập nhật tài khoản truy cập vào trong file filebeat.yml, kibana.yml, logstash.yml và các file pipeline.conf
+-   Cập nhật tài khoản truy cập vào trong file kibana.yml và logstash.yml
 -   Thoát bash elastic, truy cập vào bash của kibana
 
 ```
