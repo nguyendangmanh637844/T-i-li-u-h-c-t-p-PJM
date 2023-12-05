@@ -4,4 +4,6 @@
 
 - pipeline.id: main
   path.config: "/usr/share/logstash/pipeline"
+- pipeline.id: pvb-pipeline
+  path.config: "/usr/share/logstash/pipeline/pvb-pipeline.conf"
 
