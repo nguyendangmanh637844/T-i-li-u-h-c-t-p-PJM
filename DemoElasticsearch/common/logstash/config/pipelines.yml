@@ -4,4 +4,6 @@
 
 - pipeline.id: main
   path.config: "/usr/share/logstash/pipeline"
+- pipeline.id: java-pipeline
+  path.config: "/usr/share/logstash/java-pipeline.conf"
 

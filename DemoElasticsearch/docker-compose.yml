@@ -37,6 +37,8 @@ services:
       context: .
       dockerfile: Dockerfile-logstash
     container_name: sem_logstash
+    ports:
+      - 5044:5044
     restart: always
     depends_on:
       - elasticsearch
