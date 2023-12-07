@@ -6,18 +6,24 @@ import org.apache.http.auth.UsernamePasswordCredentials;
 import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.elasticsearch.client.RestClient;
 import org.elasticsearch.client.RestHighLevelClient;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ElasticsearchClientManager {
+    @Value("${elasticsearch.host}")
+    private String ELASTICSEARCH_HOST;
+    @Value("${elasticsearch.port}")
+    private int ELASTICSEARCH_PORT;
+    @Value("${elasticsearch.scheme}")
+    private String ELASTICSEARCH_SCHEME;
+    @Value("${elasticsearch.username}")
+    private String ELASTICSEARCH_USERNAME;
+    @Value("${elasticsearch.password}")
+    private String ELASTICSEARCH_PASSWORD;
+    private RestHighLevelClient restHighLevelClient;
 
-    private static final String ELASTICSEARCH_HOST = "localhost";
-    private static final int ELASTICSEARCH_PORT = 9200;
-    private static final String ELASTICSEARCH_SCHEME = "http";  // Use "https" if your Elasticsearch is secured with HTTPS
-    private static final String ELASTICSEARCH_USERNAME = "elastic";
-    private static final String ELASTICSEARCH_PASSWORD = "w2IFvLrZAkRmwlDQoTmB";
-
-    private static RestHighLevelClient restHighLevelClient;
-
-    public static RestHighLevelClient getClient() {
+    public RestHighLevelClient getClient() {
         if (restHighLevelClient == null) {
             restHighLevelClient = new RestHighLevelClient(
                     RestClient.builder(new HttpHost(ELASTICSEARCH_HOST, ELASTICSEARCH_PORT, ELASTICSEARCH_SCHEME))
@@ -31,7 +37,7 @@ public class ElasticsearchClientManager {
         return restHighLevelClient;
     }
 
-    public static void closeClient() {
+    public void closeClient() {
         if (restHighLevelClient != null) {
             try {
                 restHighLevelClient.close();

@@ -1,6 +1,5 @@
 package com.example.elk.repositories;
 
-import com.example.elk.entities.Document;
 import com.example.elk.models.ElasticsearchClientManager;
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.action.search.SearchRequest;
@@ -13,21 +12,27 @@ import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.elasticsearch.search.sort.SortBuilders;
 import org.elasticsearch.search.sort.SortOrder;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Component
 @Slf4j
 public class ElasticsearchTemplate implements IElasticSearchTemplate {
-    private final RestHighLevelClient client = ElasticsearchClientManager.getClient();
+    private ElasticsearchClientManager manager;
+    private RestHighLevelClient client;
+
+    @Autowired
+    public ElasticsearchTemplate(ElasticsearchClientManager manager) {
+        this.manager = manager;
+        client = manager.getClient();
+    }
+
     @Override
     public SearchResponse searchByField(String fieldName, String value, String index) {
         try {
-            SearchRequest searchRequest = new SearchRequest(index); // Thay "your_index" bằng tên index thực tế
+            SearchRequest searchRequest = new SearchRequest(index);
             SearchSourceBuilder sourceBuilder = new SearchSourceBuilder();
-            sourceBuilder.query(QueryBuilders.matchQuery(fieldName, value)); // Tìm kiếm tất cả các documents
+            sourceBuilder.query(QueryBuilders.matchQuery(fieldName, value));
 
             searchRequest.source(sourceBuilder);
             SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);

@@ -1,0 +1,1 @@
+Thay passwork của elasticsearch vào file src/main/resources/application.properties
