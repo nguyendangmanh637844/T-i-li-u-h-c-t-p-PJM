@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignalR Demo</title>
+  <!-- Thêm thư viện SignalR -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.9/signalr.min.js"></script>
+</head>
+<body>
+
+<div>
+  <h1>SignalR Demo</h1>
+  <input type="text" id="messageInput" placeholder="Nhập tin nhắn...">
+  <button onclick="sendMessage()">Gửi</button>
+  <ul id="messageList"></ul>
+</div>
+
+<script>
+  const connection = new signalR.HubConnectionBuilder()
+    .withUrl("http://localhost:5229/demo-hub")
+    .build();
+
+  connection.on("ReceiveMessage", (user, message) => {
+    // Lắng nghe sự kiện và hiển thị tin nhắn
+    displayMessage(`${user}: ${message}`);
+  });
+
+  connection.start()
+    .then(() => {
+      console.log("Connected to the hub");
+    })
+    .catch((error) => {
+      console.error("Error connecting to the hub:", error);
+    });
+
+  function sendMessage() {
+    const messageInput = document.getElementById("messageInput");
+    const message = messageInput.value;
+
+    if (message.trim() !== "") {
+      connection.invoke("SendMessage", "JS", message);
+      messageInput.value = "";
+    }
+  }
+
+  // Hàm hiển thị tin nhắn
+  function displayMessage(message) {
+    const messageList = document.getElementById("messageList");
+    const listItem = document.createElement("li");
+    listItem.textContent = message;
+    messageList.appendChild(listItem);
+  }
+</script>
+
+</body>
+</html>
