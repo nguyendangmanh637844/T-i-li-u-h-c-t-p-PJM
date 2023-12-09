@@ -1,0 +1,33 @@
+#
+# ** THIS IS AN AUTO-GENERATED FILE **
+#
+
+# Default Kibana configuration for docker target
+server.host: "0.0.0.0"
+server.shutdownTimeout: "5s"
+elasticsearch.hosts: ["http://elasticsearch:9200"]
+monitoring.ui.container.elasticsearch.enabled: true
+
+elasticsearch.username: "kibana_system"
+elasticsearch.password: "9niTOIhBGbaDaZthymWj"
+
+xpack.encryptedSavedObjects.encryptionKey: 69e77644e3e4d7890d894e64a99c7dfc
+xpack.reporting.encryptionKey: ac27f8b3c6d09b39cdf126a155e81bad
+xpack.security.encryptionKey: 68c9cace577d1706292f051800d6dff4
+xpack.reporting.capture.browser.chromium.disableSandbox: true
+
+# xpack.security.sameSiteCookies: "None"
+
+xpack.security.authc.providers:
+  basic.basic1:
+    order: 0
+    description: "Log in as an Employee"
+  anonymous.anonymous1:
+    order: 1
+    description: "Continue as guest"
+    icon: "globe"
+    session:
+      idleTimeout: 1Y
+    credentials:
+      username: "ano"
+      password: "123456"

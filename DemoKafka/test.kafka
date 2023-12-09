@@ -1,0 +1,17 @@
+--Mở file này bằng vscode, tải extension Tools for Apache Kafka
+-- Tạo dữ liệu test
+PRODUCER producer-manhnd5
+topic: manhnd5
+key: {{random.uuid}}
+{
+    "id": {{random.number}},
+    "name": "{{name.findName}}",
+    "address": "{{address.city}}",
+    "age": {{random.number}}
+}
+
+###
+-- Consumer 
+CONSUMER consumer-manh
+topic: manhnd5
+from: earliest
