@@ -46,8 +46,15 @@ const MessageInput = () => {
   const sendMessage = () => {
     // Kiểm tra xem tin nhắn có giá trị hay không
     if (message.trim() !== "" && connection) {
+      const SEND_MODE = {
+        SendToAll: 0,
+        SendToCaller: 1,
+        SendToOther: 2,
+      };
+      const functionInHub = "SendMessage";
+      const userName = "React";
       // Gửi tin nhắn lên server thông qua hub
-      connection.invoke("SendMessage", "React", message);
+      connection.invoke(functionInHub, userName, message, SEND_MODE.SendToAll);
 
       // Xóa nội dung của ô văn bản sau khi gửi
       setMessage("");
@@ -64,7 +71,6 @@ const MessageInput = () => {
       />
       <button onClick={sendMessage}>Gửi</button>
       <div>
-        <h2>Messages</h2>
         <ul>
           {messages.map((msg, index) => (
             <li key={index}>{msg}</li>

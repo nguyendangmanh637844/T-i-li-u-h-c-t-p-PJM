@@ -1,4 +1,5 @@
-﻿using Server_side.Hubs;
+﻿using Server_side.connectionManagers;
+using Server_side.Hubs;
 using Server_side.IServices;
 using Server_side.Services;
 
@@ -22,6 +23,7 @@ builder.Services.AddCors(options =>
             .SetIsOriginAllowed((host) => true) // Cho phép tất cả các origin
             .AllowCredentials());
 });
+builder.Services.AddSingleton<IConnectionManager, ConnectionManager>();
 var app = builder.Build();
 
 // Kích hoạt SignalR middleware
