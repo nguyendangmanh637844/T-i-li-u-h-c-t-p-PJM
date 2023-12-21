@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  redis:
+    image: "redis:latest"
+    container_name: "my-redis"
+    ports:
+      - "6379:6379"
+      # Đặt mật khẩu cho redis là Manh*2000
+    command: redis-server --requirepass Manh*2000 
+    restart: always
