@@ -24,6 +24,7 @@ builder.Services.AddCors(options =>
             .AllowCredentials());
 });
 builder.Services.AddSingleton<IConnectionManager, ConnectionManager>();
+builder.Services.AddSingleton<DemoHub>();
 var app = builder.Build();
 
 // Kích hoạt SignalR middleware

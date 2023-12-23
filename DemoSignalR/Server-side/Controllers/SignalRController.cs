@@ -16,14 +16,14 @@ namespace Server_side.Controllers
         }
 
         [HttpPost("sendToAll")]
-        public async Task<IActionResult> SendToAll([FromBody] MessageDto messageDto)
+        public async Task<IActionResult> SendToAll([FromBody] SendToAllRequest messageDto)
         {
-            await _signalRService.SendToAll("ReceiveMessage", messageDto.User, messageDto.Message);
+            await _signalRService.SendToAll(messageDto);
             return Ok();
         }
 
         [HttpPost("sendToUser")]
-        public async Task<IActionResult> SendToUser([FromBody] MessageDto messageDto)
+        public async Task<IActionResult> SendToUser([FromBody] SendToAllRequest messageDto)
         {
             var connectionId = await _signalRService.GetConnectionIdByUsername(messageDto.User);
             if (connectionId != null)

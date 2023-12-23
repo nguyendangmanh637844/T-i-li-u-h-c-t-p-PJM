@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNet.SignalR.Infrastructure;
-using Microsoft.AspNet.SignalR.Messaging;
-using Microsoft.AspNetCore.SignalR;
-using Server_side.connectionManagers;
+﻿using Microsoft.AspNetCore.SignalR;
 using Server_side.enums;
+using Server_side.models;
 
 namespace Server_side.Hubs
 {
@@ -39,34 +37,47 @@ namespace Server_side.Hubs
         }
 
         //Các phương thức trong Hub
-        public async Task SendMessage(string user, string message, SendModes mode = SendModes.ALL)
+        public async Task SendMessage(SendToAllRequest request)
         {
+            // Đảm bảo rằng user và message không bao giờ là null
+            string user = request.User ?? string.Empty;
+            string message = request.Message ?? string.Empty;
+
+            // Sử dụng GetValueOrDefault để xác định mode và tránh giá trị null
+            SendModes mode = request.SendModes == null ? SendModes.ALL : request.SendModes;
+
+            // Sử dụng ToString() trực tiếp mà không cần kiểm tra null
+            Channels channel = request.Channels == null ? Channels.CHANNEL_1 : request.Channels;
+
             switch (mode)
             {
                 case SendModes.ALL:
                     // Gửi tin nhắn cho tất cả
-                    await Clients.All.SendAsync("ReceiveMessage", user, message);
+                    await Clients.All.SendAsync(channel.ToString(), user, message);
                     break;
 
                 case SendModes.CALLER:
                     // Gửi tin nhắn cho người gọi hàm
-                    await Clients.Caller.SendAsync("ReceiveMessage", user, message);
+                    await Clients.Caller.SendAsync(channel.ToString(), user, message);
                     break;
 
                 case SendModes.OTHER:
                     // Gửi tin nhắn cho tất cả (trừ người gọi hàm)
-                    await Clients.Others.SendAsync("ReceiveMessage", user, message);
+                    await Clients.Others.SendAsync(channel.ToString(), user, message);
                     break;
 
-                default: break;
+                default:
+                    // Nếu có thêm các trường hợp khác, xử lý tại đây
+                    break;
             }
         }
+
         public async Task SendToUser(string userId, string mesage)
         {
             if (userId == null) return;
             var connectionId = connectionManager.GetConnectionId(userId);
             if (connectionId == null) return;
-            await Clients.Client(connectionId).SendAsync("SendToUser", mesage);
+            await Clients.Client(connectionId).SendAsync(Channels.CHANNEL_2.ToString(), mesage);
         }
     }
 }

@@ -5,6 +5,14 @@ const MessageInput = () => {
   const [connection, setConnection] = useState(null);
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
+  const CHANNEL = {
+    Channel1: 0,
+    Channel2: 1,
+  };
+  const CHANNEL_NAME = {
+    Channel1: "CHANNEL_1",
+    Channel2: "CHANNEL_2",
+  };
   useEffect(() => {
     // Tạo kết nối khi component được mount
     const newConnection = new HubConnectionBuilder()
@@ -12,7 +20,7 @@ const MessageInput = () => {
       .withAutomaticReconnect()
       .build();
     // Lắng nghe sự kiện 'ReceiveMessage' từ hub
-    newConnection.on("ReceiveMessage", (user, message) => {
+    newConnection.on(CHANNEL_NAME.Channel1, (user, message) => {
       setMessages((prevMessages) => [...prevMessages, `${user}: ${message}`]);
     });
     setConnection(newConnection);
@@ -52,9 +60,14 @@ const MessageInput = () => {
         SendToOther: 2,
       };
       const functionInHub = "SendMessage";
-      const userName = "React";
+      const paramsToInvokeFuntion = {
+        User: "React",
+        Message: message,
+        SendModes: SEND_MODE.SendToAll,
+        Channels: CHANNEL.Channel1,
+      };
       // Gửi tin nhắn lên server thông qua hub
-      connection.invoke(functionInHub, userName, message, SEND_MODE.SendToAll);
+      connection.invoke(functionInHub, paramsToInvokeFuntion);
 
       // Xóa nội dung của ô văn bản sau khi gửi
       setMessage("");

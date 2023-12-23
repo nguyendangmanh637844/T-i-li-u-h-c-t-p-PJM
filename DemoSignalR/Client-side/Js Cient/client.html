@@ -20,11 +20,19 @@
   </div>
 
   <script>
+    const CHANNEL = {
+      Channel1: 0,
+      Channel2: 1
+    };
+    const CHANNEL_NAME = {
+      Channel1: "CHANNEL_1",
+      Channel2: "CHANNEL_2"
+    }
+    const domain = "http://localhost:5229";
     const connection = new signalR.HubConnectionBuilder()
-      .withUrl("http://localhost:5229/demo-hub")
+      .withUrl(domain + "/demo-hub")
       .build();
-
-    connection.on("ReceiveMessage", (user, message) => {
+    connection.on(CHANNEL_NAME.Channel1, (user, message) => {
       // Lắng nghe sự kiện và hiển thị tin nhắn
       displayMessage(`${user}: ${message}`);
     });
@@ -46,9 +54,14 @@
         SendToOther: 2
       }
       const functionInHub = "SendMessage";
-      const userName = "JS";
+      const paramsToInvokeFuntion = {
+        User: 'JS',
+        Message: message,
+        SendModes: SEND_MODE.SendToAll,
+        Channels: CHANNEL.Channel1,
+      };
       if (message.trim() !== "") {
-        connection.invoke(functionInHub, userName, message, SEND_MODE.SendToAll);
+        connection.invoke(functionInHub, paramsToInvokeFuntion);
         messageInput.value = "";
       }
     }
