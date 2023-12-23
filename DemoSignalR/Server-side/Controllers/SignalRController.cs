@@ -21,18 +21,5 @@ namespace Server_side.Controllers
             await _signalRService.SendToAll(messageDto);
             return Ok();
         }
-
-        [HttpPost("sendToUser")]
-        public async Task<IActionResult> SendToUser([FromBody] SendToAllRequest messageDto)
-        {
-            var connectionId = await _signalRService.GetConnectionIdByUsername(messageDto.User);
-            if (connectionId != null)
-            {
-                await _signalRService.SendToConnection(connectionId, "ReceiveMessage", messageDto.User, messageDto.Message);
-                return Ok();
-            }
-
-            return NotFound($"User '{messageDto.User}' not found or not connected.");
-        }
     }
 }
