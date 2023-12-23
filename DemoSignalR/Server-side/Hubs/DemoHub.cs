@@ -72,12 +72,13 @@ namespace Server_side.Hubs
             }
         }
 
-        public async Task SendToUser(string userId, string mesage)
+        public async Task SendToUser(SendToUser request)
         {
-            if (userId == null) return;
+            String userId = request.UserId ?? string.Empty;
+            if (String.IsNullOrEmpty(userId)) return;
             var connectionId = connectionManager.GetConnectionId(userId);
             if (connectionId == null) return;
-            await Clients.Client(connectionId).SendAsync(Channels.CHANNEL_2.ToString(), mesage);
+            await Clients.Client(connectionId).SendAsync(request.Channel.ToString() ?? Channels.CHANNEL_1.ToString(), request.Message);
         }
     }
 }
