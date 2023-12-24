@@ -34,9 +34,12 @@
       .build();
     connection.on(CHANNEL_NAME.Channel1, (user, message) => {
       // Lắng nghe sự kiện và hiển thị tin nhắn
-      displayMessage(`${user}: ${message}`);
+      displayMessage(`${user}: ${message}`, CHANNEL_NAME.Channel1);
     });
-
+    connection.on(CHANNEL_NAME.Channel2, (user, message) => {
+      // Lắng nghe sự kiện và hiển thị tin nhắn
+      displayMessage(`${user}: ${message}`, CHANNEL_NAME.Channel2);
+    });
     connection.start()
       .then(() => {
         console.log("Connected to the hub");
@@ -67,10 +70,10 @@
     }
 
     // Hàm hiển thị tin nhắn
-    function displayMessage(message) {
+    function displayMessage(message, channel = CHANNEL_NAME.Channel1) {
       const messageList = document.getElementById("messageList");
       const listItem = document.createElement("li");
-      listItem.textContent = message;
+      listItem.textContent = `(${channel}) ` + message;
       messageList.appendChild(listItem);
     }
   </script>

@@ -19,10 +19,16 @@ const MessageInput = () => {
       .withUrl("http://localhost:5229/demo-hub") // Điều chỉnh URL hub tương ứng với server của bạn
       .withAutomaticReconnect()
       .build();
-    // Lắng nghe sự kiện 'ReceiveMessage' từ hub
+    // Lắng nghe sự kiện từ hub
+    //lắng nghe từ Channel1
     newConnection.on(CHANNEL_NAME.Channel1, (user, message) => {
-      setMessages((prevMessages) => [...prevMessages, `${user}: ${message}`]);
+      setMessages((prevMessages) => [...prevMessages, `(${CHANNEL_NAME.Channel1}) ${user}: ${message}`]);
     });
+    //lắng nghe từ Channel2
+    newConnection.on(CHANNEL_NAME.Channel2, (user, message) => {
+      setMessages((prevMessages) => [...prevMessages, `(${CHANNEL_NAME.Channel2}) ${user}: ${message}`]);
+    });
+
     setConnection(newConnection);
 
     return () => {
