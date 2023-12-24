@@ -1,0 +1,23 @@
+Cần @EnableScheduling, @Service và @Schedule
+các thuộc tính trong schedule: 
+
+    fixedRate:
+
+    Ý nghĩa: Đặt một khoảng thời gian cố định giữa các lần thực hiện công việc.
+    Ví dụ: @Scheduled(fixedRate = 5000) sẽ thực hiện công việc mỗi 5 giây.
+    fixedDelay:
+
+    Ý nghĩa: Đặt một khoảng thời gian giữa thời điểm kết thúc của công việc trước và bắt đầu của công việc tiếp theo.
+    Ví dụ: @Scheduled(fixedDelay = 5000) sẽ chờ 5 giây sau khi công việc hiện tại kết thúc trước khi bắt đầu công việc mới.
+    initialDelay:
+
+    Ý nghĩa: Đặt một thời gian trễ trước khi bắt đầu công việc lần đầu tiên sau khi ứng dụng được khởi động.
+    Ví dụ: @Scheduled(initialDelay = 5000) sẽ chờ 5 giây trước khi thực hiện công việc lần đầu tiên.
+    cron:
+
+    Ý nghĩa: Cho phép bạn sử dụng biểu thức cron để xác định thời điểm thực hiện công việc.
+    Ví dụ: @Scheduled(cron = "0 0 12 * * ?") sẽ thực hiện công việc mỗi ngày vào lúc 12:00 trưa.
+    zone:
+
+    Ý nghĩa: Xác định múi giờ (timezone) mà cron expression sẽ được thực hiện.
+    Ví dụ: @Scheduled(cron = "0 0 12 * * ?", zone = "America/New_York") sẽ thực hiện công việc mỗi ngày vào lúc 12:00 trưa theo múi giờ New York.
