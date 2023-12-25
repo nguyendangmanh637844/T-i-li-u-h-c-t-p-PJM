@@ -1,0 +1,1 @@
+Tương tự JPA nhưng thay vì extend JpaRepository thì extend MongoRepository
