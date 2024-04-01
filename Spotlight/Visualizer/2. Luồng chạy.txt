@@ -1,7 +1,9 @@
-controller (controllers\desktop\DetailAndLogModule\frmDetailAndLogController\frmDetailAndLogController.js) 
+controller (controllers\desktop\DetailAndLogModule\frmDetailAndLogController\frmDetailAndLogController.js) chạy hàm preShowAction() đầu tiên
+Â
 => Presentation trong module (mvcextensions\DetailAndLogModule\PresentationControllers\PresentationController.js)
 => Business trong module (mvcextensions\DetailAndLogModule\BusinessControllers\BusinessController.js)
 => Business trong manager (mvcextensions\DetailAndLogManager\BusinessControllers\BusinessController.js)
+=> Trả kết quả gọi đến WillUpdateUI() trong controller
 
 Trong business manager sẽ có hàm invoke để gọi đến fabric. VD:
  DetailAndLogManager.prototype.uploadDocumentsToS3 = function (
