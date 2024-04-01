@@ -1,0 +1,24 @@
+controller (controllers\desktop\DetailAndLogModule\frmDetailAndLogController\frmDetailAndLogController.js) 
+=> Presentation trong module (mvcextensions\DetailAndLogModule\PresentationControllers\PresentationController.js)
+=> Business trong module (mvcextensions\DetailAndLogModule\BusinessControllers\BusinessController.js)
+=> Business trong manager (mvcextensions\DetailAndLogManager\BusinessControllers\BusinessController.js)
+
+Trong business manager sẽ có hàm invoke để gọi đến fabric. VD:
+ DetailAndLogManager.prototype.uploadDocumentsToS3 = function (
+    options,
+    onSuccess,
+    onError
+  ) {
+    ModelManager.invoke(
+      "PvbIftManagement",
+      "uploadDocumentToS3",
+      options,
+      onSuccess,
+      onError
+    );
+  };
+trong đó: "PvbIftManagement": là tên object
+	  "uploadDocumentToS3" là tên phương thức mapping
+
+File: Extension (modules\Extensions.js) là framework chứa các hàm dùng chung để khởi tạo các component
+File: modules\EnumDefiner.js là file chứa các enum dùng chung
