@@ -1,0 +1,9 @@
+- Tạo một thư mục mới (1) để clone code về
+- Xóa hết visualizer trong ổ c và visualizer trong workspace tại thư mục user
+- import code từ thư mục (1) vào visualizer và build thử (build lần đầu lên rất lâu khoảng nửa tiếng)
+- xóa adminconsole trong user/visulizer 
+- add git vào:  git init
+		git remote add origin https://gitlab.pvcb.vn/pvcombank/cntt/infinity/spotlight-web.git
+		git fetch origin 
+Sau này khi generate object model mà bị lỗi thì chạy câu lệnh:
+	git reset --hard (chú ý commit code trước khi chạy nếu không sẽ mất code)

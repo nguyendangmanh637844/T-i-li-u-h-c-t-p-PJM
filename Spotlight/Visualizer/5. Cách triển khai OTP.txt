@@ -1,0 +1,39 @@
+Tích hợp OTP:
+Thêm pre-processor:
+ - Tạo một class implement ObjectServicePreProcessor. ví dụ:
+package vn.com.pvcombank.javaservices.processors;
+
+import com.dbp.core.object.task.ObjectProcessorTask;
+import com.dbp.core.object.task.ObjectProcessorTaskManager;
+import com.kony.scaintegration.task.ProcessSCA;
+import com.konylabs.middleware.api.processor.FabricRequestChain;
+import com.konylabs.middleware.api.processor.manager.FabricRequestManager;
+import com.konylabs.middleware.api.processor.manager.FabricResponseManager;
+import com.konylabs.middleware.common.objectservice.ObjectServicePreProcessor;
+
+public class CreateFundTransferProcessor implements ObjectServicePreProcessor {
+    @Override
+    public void execute(FabricRequestManager fabricReqManager, FabricResponseManager fabricResManager, FabricRequestChain fabricReqChain) throws Exception {
+        Class<? extends ObjectProcessorTask>[] tasks =
+                new Class[]
+                        {
+                                ProcessSCA.class,
+                                PvbCreateFundtransferValidate.class
+                        };
+        if (ObjectProcessorTaskManager.invokeAll(fabricReqManager, fabricResManager, tasks)) {
+            fabricReqChain.execute();
+        }
+    }
+}
+- trong đó PvbCreateFundtransferValidate.class sửa ở trong code: dòng 86 theo cú pháp objservice_requestMethod 
+- sửa dòng 87 serviceName = "INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE"; thành một featureaction
+- sửa DB: Thêm vào bảng mfaserviceconfig giá trị serviceName, transactionType = ObjectName_dataModel_service
+vd: '100', 'INTERNATIONAL_ACCOUNT_FUND_TRANSFER_CREATE', 'PvbIftManagementObj_NewMobile_createfundtransferv3', NULL, NULL, NULL
+
+Lỗi {
+    "errcode": 17005,
+    "appId": "pvbIftServiceObj",
+    "opstatus": 17005,
+    "errmsg": "Not authorized"
+}
+Fix: Khi tạo một app mới, để không bị lỗi trên cần link app hiện tại vào DigitalBanking-Composite. Cách làm: vào ápp DigitalBanking-Composite> Manage Linked Apps> tìm và link app của mình vào

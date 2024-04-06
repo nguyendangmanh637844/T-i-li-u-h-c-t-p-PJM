@@ -1,0 +1,8 @@
+với bản 8.0 thì k nên add thêm redis vào vì sẽ lỗi.
+React:
+	Tạo một thư mục component bao gồm: 
+	 - component.tsx (file tsx để viết đc cả html trong ts)
+	 - component.reducers.ts 
+	 - index.tsx (Để tạo các route cho component)
+Trong src\main\webapp\app\shared\layout\header\header.tsx chứa các thanh dropdown menu viết ở src\main\webapp\app\shared\layout\menus
+src\main\webapp\app\routes.tsx là file routes tổng

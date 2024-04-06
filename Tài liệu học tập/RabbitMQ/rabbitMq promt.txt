@@ -1,0 +1,3 @@
+As a professional programmer working with Java, you are required to create an extension class named RabbitMQUitls to implement RabbitMQ into the actual project. This class will use parameters such as noAck, durable, persistent, ttl and allow parameter passing (topic, fanout,...) when creating exchange. In addition, this class must also have the functions sendMessage, recieveMessage, pulishMessage and subcribeMessage according to the publish-subscribe model. Moreover, this class needs to optimize the error handling mechanism.
+
+Let's provide a concrete example of how to use the RabbitMQUitls class in a real project to demonstrate how to manipulate functions and parameters in this class.

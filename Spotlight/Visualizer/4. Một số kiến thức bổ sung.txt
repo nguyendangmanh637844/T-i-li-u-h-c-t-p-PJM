@@ -1,0 +1,17 @@
+
+điều hướng:  
+	var navObj = new kony.mvc.Navigation("next_form");
+  	navObj.navigate();
+truyền dữ liệu trong các form:
+	kony.store.setItem("key", "value");
+	let value = kony.store.getItem("key");
+	kony.store.removeItem() ;
+lấy presenter của module khác:
+ getPresenter : function(){
+    return kony.mvc.MDAApplication.getSharedInstance().getModuleManager().getModule("AuthModule").presentationController;
+  },
+function $typeOf(value) {
+  const typeString = Object.prototype.toString.call(value).slice(8, -1);
+  return typeString.toLowerCase();
+}
+có thể dùng nhiều skin như dùng class vd: a.skin = "skinA skinB skinC"
